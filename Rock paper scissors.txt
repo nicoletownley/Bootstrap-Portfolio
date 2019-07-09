@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+​
+<body>
+<h1>Hi player welcome to rock paper scissors game!</h1>
+<h2>Press 'r' for rock, p for 'paper', 's' for scissors</h2>
+<h4>your pick is: <span id = "pPick"></span></h4>
+<h4>computer picked: <span id = "cPick"></span></h4>
+<h4>wins: <span id="w"></span></h4>
+<h4>losses: <span id="l"></span></h4>
+<h4>ties: <span id="t"></span></h4>
+</body>
+​
+<script type="text/javascript">
+  var computerPick;
+  var choices = ["r", "p", "s"];
+  var wins, losses, ties;
+  var winC=0, lossC=0, tieC=0;
+  var userPick = document.getElementById("pPick");
+  document.onkeyup = function(event) {
+	   for (var i = 0; i < 3; i ++)
+	   {
+	     if (event.key === "r")
+	       userPick.textContent = "rock";
+	     else if (event.key === "p")
+	       userPick.textContent = "paper";
+       else if (event.key === "s")
+         userPick.textContent = "scissors";
+	   }
+    computerPick = document.getElementById("cPick");
+	   var hisPick = choices[Math.floor(Math.random()*choices.length)];
+    computerPick.textContent = hisPick;
+​
+    //determine win loss tie
+	  if (event.key === hisPick) {
+      tieC++;
+      ties = document.getElementById("t");
+      console.log("tie: " + tieC);
+      ties.textContent = tieC + " ";
+    }
+​
+    if ((event.key ==='r' && hisPick === 'p') ||) {
+      tieC++;
+      ties = document.getElementById("t");
+      console.log("tie: " + tieC);
+      ties.textContent = tieC + " ";
+    }
+​
+    if (event.key === hisPick) {
+      tieC++;
+      ties = document.getElementById("t");
+      console.log("tie: " + tieC);
+      ties.textContent = tieC + " ";
+    }
+  };
+​
+​
+​
+​
+</script>
+</html>

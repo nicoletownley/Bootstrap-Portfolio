@@ -5,89 +5,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
 
 
     <title>Document</title>
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
-        <a class="navbar-brand name-logo text-white py-2 px-4" href="index.html">Nicole Townley</a>
-        <!-- This part syles the wrong part of the nav bar -->
-         <div style="height: 100px; background-color: rgba(255,0,0,0.1);">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a class="navbar-brand" href="index.html" id="logo"style= "height: 100px; background-color:#2BBBAD;">Nicole Townley</a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-           
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
+          </button>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">About</a>
+              </li>
             </ul>
+          </div>
+          <!-- /.navbar-collapse -->
         </div>
-    </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8">
-                <div class="page header">
-                    <h1>About Me</h1>
-                </div>
-                <div class="row">
+        <!-- /.container -->
+      </nav>
+      <!-- End of navbar -->
+    
+      <!-- Start of container -->
+      <main class="container">
+        <section class="row">
+          <div class="col-md-8">
+            <article class="block">
+x              <h1 class="block-header">About Me</h1>
+              <hr />
+              
+              <div class="row">
                     <div class="col-sm-3">
                         <img
                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAABhCAMAAADx2D+RAAAAMFBMVEXMzMzPz8/JycnGxsapqam6urrBwcGkpKS2trasrKyxsbGhoaG+vr6dnZ2ampqUlJSXM/6wAAABcklEQVRoge2Y2W7EMAhFuWAwxu70//+2OK1GM10epqlUqeUoK064AZMHTFQURVEURVEURVEURfEXAe4ON3Z8an8YbtPAvRFJH7cCMR00phC1zicEMFye0DQc04Zuy7HR6jLFw2Y+oe1MFE6YNEGdeoYCQrO8TgXBkMZoNAlPZxRgz4Ma0GWkTHqymfHskUvGljHyBOYpBZILHwqZiu0J44JX+5SfUNif2Xd2dpa2SN5etj0Ebk3Qz2YJze2Y6UBfx0xr88xXnmSyjnV+pnl0yZIdu1pjOxpCjXcQfYGi72ptZ6r14x/3Vq1f/olFURRFURRFURTFP0Pe950LdjWJ8L4+9jxkE0sPt6kIN2UWY6VlZuwKczEyKNkKbhyWbbfoyiFr/PC6DcZKfx4WLk7DnRRLNEXg6qzQWKbAYvCCZqf/cBD5mlN6MedFviQyS2EUOZJJWljEFmqytSMfse9086DXpZNr9w7onR/cjP0Uv74q8AKkBQh8EUtQLwAAAABJRU5ErkJggg==">
                     </div>
-                    <div class="col-sm-9">
-                        <div class="caption">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut
-                                labore et dolore magna aliqua. Scelerisque mauris pellentesque pulvinar pellentesque
-                                habitant morbi tristique senectus. Consectetur a erat nam at lectus urna. Donec pretium
-                                vulputate sapien nec sagittis aliquam malesuada. Lorem ipsum dolor sit amet consectetur
-                                adipiscing elit pellentesque. Orci ac auctor augue mauris augue neque. Aliquam nulla
-                                facilisi cras fermentum odio eu feugiat pretium nibh. Ornare arcu odio ut sem nulla.
-                                Etiam
-                                erat velit scelerisque in dictum. Pellentesque habitant morbi tristique senectus. Eu non
-                                diam phasellus vestibulum lorem sed risus. Quis vel eros donec ac odio tempor orci
-                                dapibus.
-                                Mattis rhoncus urna neque viverra justo. Volutpat est velit egestas dui id ornare arcu.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                    
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.</p>
+              <br />
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo
+                consequat.
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+    
     
                         <!-- Footer -->
-    <footer class="page-footer font-small teal pt-4">
-
-                            <!-- Footer Text -->
-        <div class="container-fluid text-center text-md-left">
+        
 
 
 
-                            <!-- Copyright -->
-                            <div class="footer-copyright text-center py-3">© 2018 Copyright:
-                                <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-                            </div>
-                            <!-- Copyright -->
 
-                        </footer>
 
-    </footer>
+
+
+
+
+
+         
+                        
+
+
+
+
+        <div class="footer-copyright text-center py-3" style="background-color:#2BBBAD">© 2019 Copyright Nicole Townley</div>
+                               
+                                
+         </footer>
+
+
 </body>
 
 </html> 
