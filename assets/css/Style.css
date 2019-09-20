@@ -27,6 +27,9 @@ h5 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+body {
+  background-image: url("/assets/images/Rutgers.jpg");
+}
     .card-img-overlay {
         text-align: center;
         margin: 0 auto;
